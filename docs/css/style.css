@@ -869,6 +869,7 @@ footer {
   width: 370px;
   height: 294px;
   overflow: hidden;
+  cursor: pointer;
 }
 .filtered-activity-cover {
   text-decoration: none;
