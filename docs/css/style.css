@@ -8,7 +8,7 @@
     --main-font: roboto, sans-serif;
     --secondary-font: raleway, sans-serif;
     --secondary-button-color: #F5F4FA;
-
+    --border-color: #EEEEEE;
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #f5f4fa;
     --footer-bg-color: #2f303a;
@@ -104,7 +104,6 @@ padding-bottom: 94px;
 
 .pages {
     font-family: var(--main-font);
-
     background-color: var(--primary-bg-color);
 }
 
@@ -850,9 +849,9 @@ footer {
   width: 370px;
   height: 404px;
   border: 1px solid var(--color-border-items);
-  box-shadow: 0;
   box-sizing: border-box;
-  border:1px;
+  box-shadow: 0.1px;
+  border: 1px solid var(--border-color);
   transition: box-shadow var(--transition-rule);
 }
 .filtered-activity-item:hover,
