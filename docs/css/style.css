@@ -178,6 +178,10 @@ text-decoration: none;
 .nav-menu .nav-link:focus {
   color: var(--accent-color);
   outline: none;
+  transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 
 .nav-menu .nav-link:hover::after,
@@ -230,6 +234,10 @@ text-decoration: none;
   .info-list .info-link:hover {
     color: var(--accent-color);
     fill: var(--accent-color);
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
   }
 .nav-item:not(:last-child) {
     margin-right: 50px;
@@ -251,6 +259,10 @@ text-decoration: none;
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-color);
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 
 .nav-link.current {
@@ -280,6 +292,10 @@ text-decoration: none;
 .info-link:hover,
 .info-link:focus {
     color: var(--accent-color);
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 .icon-tel {
     width:10px; 
@@ -366,6 +382,10 @@ text-decoration: none;
 .hero-button:focus {
     background-color: var(--hover-button-color);
     cursor: pointer;
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 /* modal  */
 .modal-close {
@@ -392,8 +412,10 @@ text-decoration: none;
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-
-  transition: opacity var(--transition-rule);
+  transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 
 .backdrop.is-hidden {
@@ -608,10 +630,18 @@ padding-left: 0;
 .social-link:focus,
 .social-link:hover {
 background-color: var(--accent-color);
+transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 .social-link:focus .social-network,
 .social-link:hover .social-network {
     fill: var(--secondary-text-color); 
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
    
 }
   
@@ -665,15 +695,20 @@ background-color: var(--accent-color);
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--accent-color);
-  transition: var(--transition-rule);
+  transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 
 .client-link:focus .client-icon,
 .client-link:hover .client-icon {
   fill: var(--accent-color);
-  transition: var(--transition-rule);
+  transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
-
 .client-icon {
   display: block;
   position: absolute;
@@ -769,6 +804,10 @@ footer {
   .footer-social-link:focus,
   .footer-social-link:hover {
     background-color: var(--accent-color);
+    transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
   }
   
   .footer-social-network {
@@ -808,7 +847,10 @@ footer {
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
     cursor: pointer;
-    transition: var(--transition-rule);
+    transition-property: color;
+    transition-duration: var(--transition-rule);
+    transition-timing-function: var(--transition-rule);
+    transition: color var(--transition-rule);
 }
 
 .filter-button:not(:last-child) {
@@ -860,6 +902,10 @@ footer {
   0 1px 4px rgba(0, 0, 0, 0.16),
   0 0 4px  rgba(0, 0, 0, 0.06),
   0 0 1px rgba(0, 0, 0, 0.12);
+  transition-property: color;
+	transition-duration: var(--transition-rule);
+	transition-timing-function: var(--transition-rule);
+  transition: color var(--transition-rule);
 }
 .filter-link {
   text-decoration: none;
@@ -897,22 +943,25 @@ footer {
   cursor: pointer;
 }
 .filtered-activity-cover {
-  text-decoration: none;
   position: absolute;
-  padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  color: var(--primary-bg-color);
   font-size: 18px;
-  line-height: 1.56;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  pointer-events: none;
   transform: translateY(100%);
-  opacity: 0;
-
-  transition: opacity var(--transition-rule), transform var(--transition-rule);
+  transition: var(--transition-rule) ;
+}
+.filtered-activity-cover-overlay {
+  padding: 63px 24px;
+  color: var(--secondary-text-color);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
 
 .filtered-activity-item:hover .filtered-activity-cover{
