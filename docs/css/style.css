@@ -517,6 +517,7 @@ text-decoration: none;
 	height: 70px;
 	padding: 27px 0;
 	position: absolute;
+  font-size: 14;
 	left: 0;
 	bottom: 0;
 	color: var(--logo-white-color);
